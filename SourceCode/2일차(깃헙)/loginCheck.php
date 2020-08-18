@@ -22,3 +22,4 @@ echo "<script>alert('아이디 또는 패스워드를 입력하세요.');history
 	exit;
 }
 ?>
+//
