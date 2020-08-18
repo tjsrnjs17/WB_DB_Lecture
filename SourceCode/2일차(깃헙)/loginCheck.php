@@ -4,7 +4,7 @@
 
 if($_POST['user_id'] && $_POST['user_pw']){ // mysql 접근2
 	$resource = mysqli_query( $con,"SELECT * FROM user WHERE id = '".$_POST['user_id']."' and pw = '".$_POST['user_pw']."'" ); // mysql에 검색
-	$num = mysqli_num_rows( $resource ); // php 변수 만들기
+	$num = mysqli_num_rows( $resource ); // 변수를 찾고자하는 행의 수로 정하기
 	if($num>0) { //변수값이 0보다 크다면
 		setcookie('user_id',$_POST['user_id'],time()+(86400*30),'/'); // 쿠키를 정하기1
 		setcookie('user_pw',$_POST['user_pw'],time()+(86400*30),'/'); // 쿠키를 정하기2
