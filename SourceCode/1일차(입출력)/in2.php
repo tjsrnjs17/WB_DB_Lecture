@@ -9,8 +9,8 @@ input2: <input type = "text" name="content2"/>
 </html>
 
 <?php
-	$con = mysqli_connect("localhost", "root", "", "io");
-	$sql = "INSERT INTO testd (content,content2) VALUES('$_POST[content]','$_POST[content2]')";
-	$result = mysqli_query( $con, $sql );
+	$con = mysqli_connect("localhost", "root", "", "io"); //DB연결
+	$sql = "INSERT INTO testd (content,content2) VALUES('$_POST[content]','$_POST[content2]')"; //content, content2에 입력받은 값을 삽입하는 쿼리문 요청
+	$result = mysqli_query( $con, $sql ); //쿼리문 
 	
 ?>
