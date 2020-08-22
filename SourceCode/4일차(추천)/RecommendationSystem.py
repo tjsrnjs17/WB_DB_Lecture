@@ -11,7 +11,7 @@ def numEX(result):#숫자만 추출해서 리스트로 리턴
     return resultD
 
 
-con = pymysql.connect(user="exroot",password="",host="59.27.179.129",db='wbflix', charset='utf8')#서버 연결 정보
+con = pymysql.connect(user="exroot",password="",host="",db='wbflix', charset='utf8')#서버 연결 정보
 cursor = con.cursor()#서버 연결
 
 
